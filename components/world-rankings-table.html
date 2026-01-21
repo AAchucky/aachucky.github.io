@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Venerated Harmonious Squirrel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Roboto;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: 0.01em;
+        line-height: 1.6;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anton:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="../style.css" />
+    <div>
+      <link href="./world-rankings-table.css" rel="stylesheet" />
+      <div class="world-rankings-table-container1">
+        <section class="world-rankings-table-section">
+          <div class="world-rankings-table-container">
+            <div class="world-rankings-table-header">
+              <div class="world-rankings-table-badge">
+                <svg
+                  fill="none"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle r="10" cx="12" cy="12"></circle>
+                  <path
+                    d="M12 2a14.5 14.5 0 0 0 0 20a14.5 14.5 0 0 0 0-20M2 12h20"
+                  ></path>
+                </svg>
+                <span>MundiGol 2026 Rankings</span>
+              </div>
+              <h2 class="section-title">Clasificaciones del Mundial 2026</h2>
+              <p class="section-subtitle">
+                Estado actual de las eliminatorias y grupos preliminares. Datos
+                actualizados en tiempo real para el camino a USA, México y
+                Canadá.
+              </p>
+            </div>
+            <div class="world-rankings-table-tabs">
+              <button
+                id="tab-eliminatorias"
+                class="active world-rankings-table-tab"
+              >
+                Eliminatorias CONMEBOL
+              </button>
+              <button id="tab-grupos" class="world-rankings-table-tab">
+                Fase de Grupos Preliminar
+              </button>
+            </div>
+            <div class="world-rankings-table-wrapper">
+              <div
+                id="content-eliminatorias"
+                class="active world-rankings-table-content"
+              >
+                <div class="world-rankings-table-responsive">
+                  <table class="world-rankings-table-main">
+                    <thead>
+                      <tr>
+                        <th><span>Pos</span></th>
+                        <th><span>Selección</span></th>
+                        <th><span>PJ</span></th>
+                        <th><span>G</span></th>
+                        <th><span>E</span></th>
+                        <th><span>P</span></th>
+                        <th><span>PTS</span></th>
+                        <th><span>Estado</span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="world-rankings-table-row highlighted">
+                        <td class="world-rankings-table-pos"><span>1</span></td>
+                        <td class="world-rankings-table-team">
+                          <div class="world-rankings-table-team-box">
+                            <span class="world-rankings-table-flag">🇦🇷</span>
+                            <span class="world-rankings-table-name">
+                              Argentina
+                            </span>
+                          </div>
+                        </td>
+                        <td><span>14</span></td>
+                        <td><span>12</span></td>
+                        <td><span>2</span></td>
+                        <td><span>0</span></td>
+                        <td class="world-rankings-table-pts">
+                          <span>38</span>
+                        </td>
+                        <td>
+                          <span class="qualified world-rankings-table-status">
+                            Calificado
+                          </span>
+                        </td>
+                      </tr>
+                      <tr class="world-rankings-table-row">
+                        <td class="world-rankings-table-pos"><span>2</span></td>
+                        <td class="world-rankings-table-team">
+                          <div class="world-rankings-table-team-box">
+                            <span class="world-rankings-table-flag">🇺🇾</span>
+                            <span class="world-rankings-table-name">
+                              Uruguay
+                            </span>
+                          </div>
+                        </td>
+                        <td><span>14</span></td>
+                        <td><span>9</span></td>
+                        <td><span>3</span></td>
+                        <td><span>2</span></td>
+                        <td class="world-rankings-table-pts">
+                          <span>30</span>
+                        </td>
+                        <td>
+                          <span class="in-zone world-rankings-table-status">
+                            Zona Cupo
+                          </span>
+                        </td>
+                      </tr>
+                      <tr class="world-rankings-table-row">
+                        <td class="world-rankings-table-pos"><span>3</span></td>
+                        <td class="world-rankings-table-team">
+                          <div class="world-rankings-table-team-box">
+                            <span class="world-rankings-table-flag">🇧🇷</span>
+                            <span class="world-rankings-table-name">
+                              Brasil
+                            </span>
+                          </div>
+                        </td>
+                        <td><span>14</span></td>
+                        <td><span>8</span></td>
+                        <td><span>4</span></td>
+                        <td><span>2</span></td>
+                        <td class="world-rankings-table-pts">
+                          <span>28</span>
+                        </td>
+                        <td>
+                          <span class="in-zone world-rankings-table-status">
+                            Zona Cupo
+                          </span>
+                        </td>
+                      </tr>
+                      <tr class="world-rankings-table-row">
+                        <td class="world-rankings-table-pos"><span>4</span></td>
+                        <td class="world-rankings-table-team">
+                          <div class="world-rankings-table-team-box">
+                            <span class="world-rankings-table-flag">🇨🇴</span>
+                            <span class="world-rankings-table-name">
+                              Colombia
+                            </span>
+                          </div>
+                        </td>
+                        <td><span>14</span></td>
+                        <td><span>7</span></td>
+                        <td><span>5</span></td>
+                        <td><span>2</span></td>
+                        <td class="world-rankings-table-pts">
+                          <span>26</span>
+                        </td>
+                        <td>
+                          <span class="in-zone world-rankings-table-status">
+                            Zona Cupo
+                          </span>
+                        </td>
+                      </tr>
+                      <tr class="world-rankings-table-row">
+                        <td class="world-rankings-table-pos"><span>5</span></td>
+                        <td class="world-rankings-table-team">
+                          <div class="world-rankings-table-team-box">
+                            <span class="world-rankings-table-flag">🇪🇨</span>
+                            <span class="world-rankings-table-name">
+                              Ecuador
+                            </span>
+                          </div>
+                        </td>
+                        <td><span>14</span></td>
+                        <td><span>6</span></td>
+                        <td><span>4</span></td>
+                        <td><span>4</span></td>
+                        <td class="world-rankings-table-pts">
+                          <span>22</span>
+                        </td>
+                        <td>
+                          <span class="in-zone world-rankings-table-status">
+                            Zona Cupo
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div id="content-grupos" class="world-rankings-table-content">
+                <div class="world-rankings-table-grid">
+                  <div class="world-rankings-table-group-card">
+                    <h3 class="world-rankings-table-group-title">
+                      Grupo A (Anfitriones)
+                    </h3>
+                    <ul class="world-rankings-table-group-list">
+                      <li>
+                        <span class="world-rankings-table-flag">🇺🇸</span>
+                        <span class="world-rankings-table-name">USA</span>
+                        <span class="world-rankings-table-pts">0 pts</span>
+                      </li>
+                      <li>
+                        <span class="world-rankings-table-flag">🇲🇽</span>
+                        <span class="world-rankings-table-name">México</span>
+                        <span class="world-rankings-table-pts">0 pts</span>
+                      </li>
+                      <li>
+                        <span class="world-rankings-table-flag">🇨🇦</span>
+                        <span class="world-rankings-table-name">Canadá</span>
+                        <span class="world-rankings-table-pts">0 pts</span>
+                      </li>
+                      <li>
+                        <span class="world-rankings-table-flag">❓</span>
+                        <span class="world-rankings-table-name">TBD</span>
+                        <span class="world-rankings-table-pts">0 pts</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="world-rankings-table-group-card">
+                    <h3 class="world-rankings-table-group-title">
+                      Grupo B (Cabezas de Serie)
+                    </h3>
+                    <ul class="world-rankings-table-group-list">
+                      <li>
+                        <span class="world-rankings-table-flag">🇦🇷</span>
+                        <span class="world-rankings-table-name">Argentina</span>
+                        <span class="world-rankings-table-pts">0 pts</span>
+                      </li>
+                      <li>
+                        <span class="world-rankings-table-flag">🇫🇷</span>
+                        <span class="world-rankings-table-name">Francia</span>
+                        <span class="world-rankings-table-pts">0 pts</span>
+                      </li>
+                      <li>
+                        <span class="world-rankings-table-flag">🇪🇸</span>
+                        <span class="world-rankings-table-name">España</span>
+                        <span class="world-rankings-table-pts">0 pts</span>
+                      </li>
+                      <li>
+                        <span class="world-rankings-table-flag">❓</span>
+                        <span class="world-rankings-table-name">TBD</span>
+                        <span class="world-rankings-table-pts">0 pts</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="world-rankings-table-ads-container">
+              <div class="world-rankings-table-ad-placeholder">
+                <div class="world-rankings-table-ad-label">
+                  <span>Publicidad Patrocinada</span>
+                </div>
+                <div class="world-rankings-table-ad-content">
+                  <svg
+                    fill="none"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                    ></path>
+                  </svg>
+                  <span>Espacio reservado para AdSense / Afiliados</span>
+                </div>
+              </div>
+            </div>
+            <div class="world-rankings-table-footer">
+              <div class="world-rankings-table-info">
+                <svg
+                  fill="none"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="18"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle r="10" cx="12" cy="12"></circle>
+                  <line x1="12" x2="12" y1="16" y2="12"></line>
+                  <line x1="12" x2="12.01" y1="8" y2="8"></line>
+                </svg>
+                <span>
+                  Datos preliminares sujetos a cambios oficiales por la FIFA.
+                </span>
+              </div>
+              <a href="Homepage">
+                <div class="btn btn-secondary btn-lg">
+                  <span>Explorar Calendario Completo</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <div class="world-rankings-table-container2">
+          <div class="world-rankings-table-container3">
+            <style>
+                      @keyframes fadeIn {from {opacity: 0;
+              transform: translateY(10px);}
+              to {opacity: 1;
+              transform: translateY(0);}}
+            </style>
+          </div>
+        </div>
+        <div class="world-rankings-table-container4">
+          <div class="world-rankings-table-container5">
+            <script defer="" data-name="world-rankings-table-logic">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  const eliminatoriasTab = document.getElementById("tab-eliminatorias")
+                  const gruposTab = document.getElementById("tab-grupos")
+                  const eliminatoriasContent = document.getElementById("content-eliminatorias")
+                  const gruposContent = document.getElementById("content-grupos")
+
+                  eliminatoriasTab.addEventListener("click", () => {
+                    eliminatoriasTab.classList.add("active")
+                    gruposTab.classList.remove("active")
+                    eliminatoriasContent.classList.add("active")
+                    gruposContent.classList.remove("active")
+                  })
+
+                  gruposTab.addEventListener("click", () => {
+                    gruposTab.classList.add("active")
+                    eliminatoriasTab.classList.remove("active")
+                    gruposContent.classList.add("active")
+                    eliminatoriasContent.classList.remove("active")
+                  })
+
+                  const rows = document.querySelectorAll(".world-rankings-table-row")
+                  rows.forEach((row, index) => {
+                    row.style.animationDelay = `${index * 50}ms`
+                  })
+                })()
+              });
+            </script>
+          </div>
+        </div>
+        <top-scorers-wrapper class="top-scorers-wrapper">
+          <!--TopScorers component-->
+          <div class="top-scorers-container1">
+            <section class="top-scorers-section">
+              <div class="top-scorers-container">
+                <div class="top-scorers-header">
+                  <h2 class="section-title">Favoritos a la Bota de Oro</h2>
+                  <p class="section-subtitle">
+                    Los artilleros que dominarán el Mundial 2026. Analiza las
+                    cuotas y prepárate para la acción.
+                  </p>
+                </div>
+                <div class="top-scorers-list">
+                  <article class="top-scorers-item">
+                    <div class="top-scorers-rank"><span>01</span></div>
+                    <div class="top-scorers-image-wrapper">
+                      <img
+                        alt="Kylian Mbappé en acción"
+                        src="https://images.pexels.com/photos/29964390/pexels-photo-29964390.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
+                        loading="lazy"
+                        class="top-scorers-player-img"
+                      />
+                      <div class="top-scorers-odds-badge">
+                        <span>+650</span>
+                      </div>
+                    </div>
+                    <div class="top-scorers-content">
+                      <div class="top-scorers-meta">
+                        <h3 class="top-scorers-name">Kylian Mbappé</h3>
+                        <span class="top-scorers-team">Francia</span>
+                      </div>
+                      <p class="section-content">
+                        El actual referente del fútbol mundial busca repetir su
+                        hazaña de 2022. Con una velocidad explosiva y definición
+                        clínica, es el favorito indiscutible de las casas de
+                        apuestas para liderar el goleo en Norteamérica.
+                      </p>
+                      <div class="top-scorers-actions">
+                        <a href="https://amazon.com/soccer-gear">
+                          <div rel="nofollow" class="btn-primary btn btn-sm">
+                            <svg
+                              fill="none"
+                              width="18"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="18"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <circle r="1" cx="8" cy="21"></circle>
+                              <circle r="1" cx="19" cy="21"></circle>
+                              <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                              ></path>
+                            </svg>
+                            <span>Equipamiento Mbappé</span>
+                          </div>
+                        </a>
+                        <span class="top-scorers-stat">
+                          <svg
+                            fill="none"
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978m7-7.318v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978M18 9h1.5a1 1 0 0 0 0-5H18M4 22h16"
+                            ></path>
+                            <path
+                              d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm0 0H4.5a1 1 0 0 1 0-5H6"
+                            ></path>
+                          </svg>
+                          <span>Bota de Oro 2022</span>
+                        </span>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="top-scorers-item">
+                    <div class="top-scorers-rank"><span>02</span></div>
+                    <div class="top-scorers-image-wrapper">
+                      <img
+                        alt="Harry Kane celebrando un gol"
+                        src="https://images.pexels.com/photos/918798/pexels-photo-918798.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
+                        loading="lazy"
+                        class="top-scorers-player-img"
+                      />
+                      <div class="top-scorers-odds-badge">
+                        <span>+700</span>
+                      </div>
+                    </div>
+                    <div class="top-scorers-content">
+                      <div class="top-scorers-meta">
+                        <h3 class="top-scorers-name">Harry Kane</h3>
+                        <span class="top-scorers-team">Inglaterra</span>
+                      </div>
+                      <p class="section-content">
+                        El máximo goleador histórico de los 'Three Lions' llega
+                        en su madurez futbolística. Su capacidad para participar
+                        en la creación y finalizar jugadas lo mantiene como una
+                        amenaza constante en el área rival.
+                      </p>
+                      <div class="top-scorers-actions">
+                        <a href="https://amazon.com/soccer-gear">
+                          <div rel="nofollow" class="btn btn-outline btn-sm">
+                            <svg
+                              fill="none"
+                              width="18"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="18"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <circle r="1" cx="8" cy="21"></circle>
+                              <circle r="1" cx="19" cy="21"></circle>
+                              <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                              ></path>
+                            </svg>
+                            <span>Botas de Harry Kane</span>
+                          </div>
+                        </a>
+                        <span class="top-scorers-stat">
+                          <svg
+                            fill="none"
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M4 19h16M4 15l4-6l4 2l4-5l4 4"></path>
+                          </svg>
+                          <span>Consistencia Élite</span>
+                        </span>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="top-scorers-item">
+                    <div class="top-scorers-rank"><span>03</span></div>
+                    <div class="top-scorers-image-wrapper">
+                      <img
+                        alt="Lionel Messi con la selección"
+                        src="https://images.pexels.com/photos/15645110/pexels-photo-15645110.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200"
+                        loading="lazy"
+                        class="top-scorers-player-img"
+                      />
+                      <div class="top-scorers-odds-badge">
+                        <span>+1300</span>
+                      </div>
+                    </div>
+                    <div class="top-scorers-content">
+                      <div class="top-scorers-meta">
+                        <h3 class="top-scorers-name">Lionel Messi</h3>
+                        <span class="top-scorers-team">Argentina</span>
+                      </div>
+                      <p class="section-content">
+                        El campeón defensor regresa para lo que podría ser su
+                        última gran cita. Aunque su rol ha evolucionado, su
+                        instinto goleador y precisión en tiros libres lo
+                        mantienen en el podio de favoritos.
+                      </p>
+                      <div class="top-scorers-actions">
+                        <a href="https://amazon.com/soccer-gear">
+                          <div rel="nofollow" class="btn btn-sm btn-accent">
+                            <svg
+                              fill="none"
+                              width="18"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="18"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <circle r="1" cx="8" cy="21"></circle>
+                              <circle r="1" cx="19" cy="21"></circle>
+                              <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                              ></path>
+                            </svg>
+                            <span>Colección Messi</span>
+                          </div>
+                        </a>
+                        <span class="top-scorers-stat">
+                          <svg
+                            fill="none"
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978m7-7.318v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978M18 9h1.5a1 1 0 0 0 0-5H18M4 22h16"
+                            ></path>
+                            <path
+                              d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm0 0H4.5a1 1 0 0 1 0-5H6"
+                            ></path>
+                          </svg>
+                          <span>Leyenda Mundial</span>
+                        </span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="top-scorers-footer">
+                  <div class="top-scorers-disclaimer">
+                    <p class="section-content">
+                      Las cuotas mostradas son referenciales y sujetas a cambios
+                      según el mercado. MundiGol 2026 participa en programas de
+                      afiliados.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="top-scorers-container2">
+              <div class="top-scorers-container3">
+                <script defer="" data-name="top-scorers-animations">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const scorerItems = document.querySelectorAll(".top-scorers-item")
+
+                      const observerOptions = {
+                        threshold: 0.1,
+                        rootMargin: "0px 0px -50px 0px",
+                      }
+
+                      const observer = new IntersectionObserver((entries) => {
+                        entries.forEach((entry, index) => {
+                          if (entry.isIntersecting) {
+                            entry.target.style.opacity = "1"
+                            entry.target.style.transform = "translateY(0)"
+                            observer.unobserve(entry.target)
+                          }
+                        })
+                      }, observerOptions)
+
+                      scorerItems.forEach((item, index) => {
+                        item.style.opacity = "0"
+                        item.style.transform = "translateY(30px)"
+                        item.style.transition = `all 0.6s ease-out ${index * 0.15}s`
+                        observer.observe(item)
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </top-scorers-wrapper>
+        <news-grid-wrapper class="news-grid-wrapper">
+          <!--NewsGrid component-->
+          <div class="news-grid-container1">
+            <section class="news-grid-outer-wrapper">
+              <div class="news-grid-inner-container">
+                <div class="news-grid-header">
+                  <h2 class="section-title">Noticias de Enero 2026</h2>
+                  <p class="section-subtitle">
+                    Mantente al día con los últimos preparativos y controversias
+                    rumbo al Mundial 2026.
+                  </p>
+                </div>
+                <div class="news-grid-layout">
+                  <article class="news-grid-card">
+                    <div class="news-grid-card-icon">
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="m21.73 18l-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3M12 9v4m0 4h.01"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="news-grid-card-content">
+                      <time datetime="2026-01-10" class="news-grid-card-date">
+                        10 Ene, 2026
+                      </time>
+                      <h3 class="news-grid-card-title">
+                        Tensión Diplomática: Boicot USA-Groenlandia
+                      </h3>
+                      <p class="news-grid-card-text">
+                        Nuevas tensiones geopolíticas amenazan la logística del
+                        torneo tras el anuncio de restricciones comerciales.
+                      </p>
+                      <a
+                        href="https://www.fifa.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <div
+                          rel="noopener"
+                          target="_blank"
+                          class="btn-link news-grid-card-link"
+                        >
+                          <span>Leer más</span>
+                          <svg
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="news-grid-card">
+                    <div class="news-grid-card-icon">
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Zm11-4v2m0 10v2m0-8v2"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="news-grid-card-content">
+                      <time datetime="2026-01-15" class="news-grid-card-date">
+                        15 Ene, 2026
+                      </time>
+                      <h3 class="news-grid-card-title">
+                        Lanzamiento Oficial de Visas FIFA PASS
+                      </h3>
+                      <p class="news-grid-card-text">
+                        El sistema unificado de visas para los tres países
+                        anfitriones entra en vigor para facilitar el flujo de
+                        fans.
+                      </p>
+                      <a
+                        href="https://www.fifa.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <div
+                          rel="noopener"
+                          target="_blank"
+                          class="btn-link news-grid-card-link"
+                        >
+                          <span>Solicitar ahora</span>
+                          <svg
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="news-grid-card">
+                    <div class="news-grid-card-icon">
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                          ></path>
+                          <circle r="3" cx="12" cy="10"></circle>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="news-grid-card-content">
+                      <time datetime="2026-01-18" class="news-grid-card-date">
+                        18 Ene, 2026
+                      </time>
+                      <h3 class="news-grid-card-title">
+                        Kansas City: El Corazón de los Gigantes
+                      </h3>
+                      <p class="news-grid-card-text">
+                        Argentina e Inglaterra confirman sus centros de
+                        entrenamiento en Kansas City por sus instalaciones
+                        élite.
+                      </p>
+                      <a
+                        href="https://www.fifa.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <div
+                          rel="noopener"
+                          target="_blank"
+                          class="btn-link news-grid-card-link"
+                        >
+                          <span>Ver sedes</span>
+                          <svg
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="news-grid-card">
+                    <div class="news-grid-card-icon">
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="M8 2v4m8-4v4"></path>
+                          <rect
+                            x="3"
+                            y="4"
+                            rx="2"
+                            width="18"
+                            height="18"
+                          ></rect>
+                          <path d="M3 10h18"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="news-grid-card-content">
+                      <time datetime="2026-01-22" class="news-grid-card-date">
+                        22 Ene, 2026
+                      </time>
+                      <h3 class="news-grid-card-title">
+                        Plan de Transporte Inter-Sedes 2026
+                      </h3>
+                      <p class="news-grid-card-text">
+                        FIFA revela el corredor logístico que conectará Ciudad
+                        de México con Vancouver en tiempo récord.
+                      </p>
+                      <a
+                        href="https://www.fifa.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <div
+                          rel="noopener"
+                          target="_blank"
+                          class="btn-link news-grid-card-link"
+                        >
+                          <span>Detalles técnicos</span>
+                          <svg
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="news-grid-card">
+                    <div class="news-grid-card-icon">
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1-4 0V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a3 3 0 0 0 3 3h11M8 8h4m-4 4h4m-4 4h4"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="news-grid-card-content">
+                      <time datetime="2026-01-25" class="news-grid-card-date">
+                        25 Ene, 2026
+                      </time>
+                      <h3 class="news-grid-card-title">
+                        Protocolo de Seguridad Cibernética
+                      </h3>
+                      <p class="news-grid-card-text">
+                        Expertos de los tres países anfitriones blindan el
+                        sistema de ticketing contra ataques externos.
+                      </p>
+                      <a
+                        href="https://www.fifa.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <div
+                          rel="noopener"
+                          target="_blank"
+                          class="btn-link news-grid-card-link"
+                        >
+                          <span>Infórmate</span>
+                          <svg
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                  <article class="news-grid-card">
+                    <div class="news-grid-card-icon">
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Zm7 3h6m-3-3v6"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="news-grid-card-content">
+                      <time datetime="2026-01-30" class="news-grid-card-date">
+                        30 Ene, 2026
+                      </time>
+                      <h3 class="news-grid-card-title">
+                        Última Fase de Venta de Entradas
+                      </h3>
+                      <p class="news-grid-card-text">
+                        Se agotan los paquetes de hospitalidad para la final en
+                        el MetLife Stadium. Quedan pocos asientos.
+                      </p>
+                      <a
+                        href="https://www.fifa.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <div
+                          rel="noopener"
+                          target="_blank"
+                          class="btn-link news-grid-card-link"
+                        >
+                          <span>Comprar ahora</span>
+                          <svg
+                            width="18"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="18"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="news-grid-footer">
+                  <p class="news-grid-disclaimer">
+                    Datos preliminares sujetos a cambios oficiales por la FIFA.
+                  </p>
+                  <div class="news-grid-ads-placeholder">
+                    <span>Espacio para Afiliados / AdSense</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="news-grid-container2">
+              <div class="news-grid-container3">
+                <style>
+                  @media (prefers-reduced-motion: reduce) {
+                  .news-grid-card:hover {
+                    transform: none;
+                  }
+                  }
+                </style>
+              </div>
+            </div>
+            <div class="news-grid-container4">
+              <div class="news-grid-container5">
+                <script defer="" data-name="news-grid-interactivity">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const newsCards = document.querySelectorAll(".news-grid-card")
+
+                      newsCards.forEach((card, index) => {
+                        card.style.opacity = "0"
+                        card.style.transform = "translateY(20px)"
+
+                        setTimeout(() => {
+                          card.style.transition = "all 0.6s ease-out"
+                          card.style.opacity = "1"
+                          card.style.transform = "translateY(0)"
+                        }, 100 * index)
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </news-grid-wrapper>
+      </div>
+    </div>
+  </body>
+</html>

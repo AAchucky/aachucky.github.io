@@ -1,0 +1,59 @@
+.top-scorers-wrapper {
+  display: contents;
+}
+ 
+.top-scorers-container1 {
+  display: contents;
+}
+ 
+.top-scorers-container2 {
+  display: none;
+}
+ 
+.top-scorers-container3 {
+  display: contents;
+}
+
+.news-grid-wrapper {
+  display: contents;
+}
+ 
+.news-grid-container1 {
+  display: contents;
+}
+ 
+.news-grid-container2 {
+  display: none;
+}
+ 
+.news-grid-container3 {
+  display: contents;
+}
+ 
+.news-grid-container4 {
+  display: none;
+}
+ 
+.news-grid-container5 {
+  display: contents;
+}
+
+.world-rankings-table-container1 {
+  display: contents;
+}
+ 
+.world-rankings-table-container2 {
+  display: none;
+}
+ 
+.world-rankings-table-container3 {
+  display: contents;
+}
+ 
+.world-rankings-table-container4 {
+  display: none;
+}
+ 
+.world-rankings-table-container5 {
+  display: contents;
+}
