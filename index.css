@@ -109,3 +109,13 @@ footer {background:var(--color-surface-light);padding:3rem 2rem 1rem;border-top:
   margin: 0;
   opacity: 0.9;
 }
+body {
+  font-family: 'Roboto', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
+  /* Esto asegura que emojis usen fuentes del sistema (Apple para Mac/iOS, Segoe para Windows, Noto para Android/Linux) */
+}
+
+.flag, .flag-placeholder {
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif !important;
+  /* Fuerza solo para banderas, sin Roboto */
+  font-size: 1.5rem; /* Aumenta si es necesario para mejor render */
+}
