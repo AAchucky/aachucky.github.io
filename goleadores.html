@@ -535,11 +535,14 @@
                       toggleBtn.addEventListener("click", openMenu)
                       closeBtn.addEventListener("click", closeMenu)
 
-                      mobileLinks.forEach((link) => {
-                        link.addEventListener("click", () => {
-                          closeMenu()
-                        })
-                      })
+											mobileLinks.forEach((link) => {
+											  const anchor = link.closest("a")
+											  if (!anchor) return
+											
+											  anchor.addEventListener("click", () => {
+											    closeMenu()
+											  })
+											})
 
                       window.addEventListener("resize", () => {
                         if (window.innerWidth > 767 && overlay.classList.contains("is-active")) {
