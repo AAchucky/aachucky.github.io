@@ -1942,11 +1942,7 @@
                       FIFA.
                     </span>
                   </div>
-                  <a href="Homepage">
-                    <div class="btn btn-secondary btn-lg">
-                      <span>Explorar Calendario Completo</span>
-                    </div>
-                  </a>
+
                 </div>
               </div>
             </section>
@@ -2728,22 +2724,26 @@
                       })
 
                       const footerLinks = document.querySelectorAll(".footer-link")
-                      footerLinks.forEach((link) => {
-                        link.addEventListener("click", (e) => {
-                          const href = link.getAttribute("href")
-                          if (href.startsWith("#")) {
-                            const target = document.querySelector(href)
-                            if (target) {
-                              e.preventDefault()
-                              target.scrollIntoView({ behavior: "smooth" })
-                            }
-                          }
-                        })
-                      })
-                    })()
-                  });
+
+											footerLinks.forEach((link) => {
+											  const anchor = link.closest("a")
+											  if (!anchor) return
+											
+											  anchor.addEventListener("click", (e) => {
+											    const href = anchor.getAttribute("href")
+											
+											    if (href && href.startsWith("#")) {
+											      const target = document.querySelector(href)
+											      if (target) {
+											        e.preventDefault()
+											        target.scrollIntoView({ behavior: "smooth" })
+											      }
+											    }
+											  })
+											})
+                  }); 
                 </script>
-              </div>
+              </div>  
             </div>
           </div>
         </footer-wrapper>
