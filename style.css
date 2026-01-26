@@ -3296,3 +3296,30 @@
   height: 120px;   /* ← aquí cambias el tamaño. Antes era 180px, baja a 140px o 120px */
   object-fit: cover;
 }
+
+.affiliates-row {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.affiliate-link {
+  flex: 1 1 300px; /* permite que crezcan y se encojan */
+  max-width: 400px;
+  text-decoration: none;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .affiliates-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.world-rankings-table-ad-content {
+  width: 100% !important;
+  padding: 1rem 0;
+}
