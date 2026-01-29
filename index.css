@@ -167,7 +167,7 @@ body {
 
 /* 4. Por si acaso, quitamos el margen superior de la primera fila de eventos */
 .calendar-secondary {
-    margin-top: -10 !important;
+    margin-top: -10px !important;
 }
 
 
