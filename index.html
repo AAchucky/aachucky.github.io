@@ -1968,10 +1968,10 @@
             </div>
  
             <news-grid-wrapper class="news-grid-wrapper">
-              // Prueba noticias Marca
+              /
               <script>
-                async function cargarNoticias() {
-                  // Usamos el feed del Mundial de 2026 de un medio fiable
+                async function cargarNoticiasMarca() {
+                  // URL de Marca que has pasado
                   const RSS_URL = 'https://e00-marca.uecdn.es/rss/futbol.xml';
                   const API_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_URL)}`;
 
@@ -1981,10 +1981,19 @@
                     const container = document.querySelector('.news-grid-layout');
                     
                     if (data.status === 'ok') {
-                      container.innerHTML = ''; // Borra las noticias viejas de la FIFA
+                      // Filtramos para que SOLO salgan noticias del Mundial o 2026
+                      const noticiasMundial = data.items.filter(item => 
+                        item.title.toLowerCase().includes('mundial') || 
+                        item.title.includes('2026') || 
+                        item.title.toLowerCase().includes('fifa')
+                      );
 
-                      data.items.slice(0, 3).forEach(item => {
-                        // Extraemos una imagen si existe, si no, usamos un color de fondo
+                      // Si hay noticias del mundial, las ponemos. Si no, ponemos las 3 últimas de fútbol
+                      const noticiasAMostrar = noticiasMundial.length > 0 ? noticiasMundial : data.items;
+
+                      container.innerHTML = ''; 
+
+                      noticiasAMostrar.slice(0, 3).forEach(item => {
                         const fecha = new Date(item.pubDate).toLocaleDateString('es-ES', {
                           day: 'numeric', month: 'short', year: 'numeric'
                         });
@@ -2009,12 +2018,13 @@
                       });
                     }
                   } catch (error) {
-                    console.error('Error cargando noticias:', error);
+                    console.error('Error:', error);
                   }
                 }
 
-                document.addEventListener('DOMContentLoaded', cargarNoticias);
+                document.addEventListener('DOMContentLoaded', cargarNoticiasMarca);
               </script>
+
               <!--NewsGrid component-->
               <div class="news-grid-container1">
                 <section class="news-grid-outer-wrapper">
