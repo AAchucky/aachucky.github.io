@@ -1968,6 +1968,53 @@
             </div>
  
             <news-grid-wrapper class="news-grid-wrapper">
+              // Prueba noticias Marca
+              <script>
+                async function cargarNoticias() {
+                  // Usamos el feed del Mundial de 2026 de un medio fiable
+                  const RSS_URL = 'https://e00-marca.uecdn.es/rss/futbol.xml';
+                  const API_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_URL)}`;
+
+                  try {
+                    const response = await fetch(API_URL);
+                    const data = await response.json();
+                    const container = document.querySelector('.news-grid-layout');
+                    
+                    if (data.status === 'ok') {
+                      container.innerHTML = ''; // Borra las noticias viejas de la FIFA
+
+                      data.items.slice(0, 3).forEach(item => {
+                        // Extraemos una imagen si existe, si no, usamos un color de fondo
+                        const fecha = new Date(item.pubDate).toLocaleDateString('es-ES', {
+                          day: 'numeric', month: 'short', year: 'numeric'
+                        });
+
+                        container.innerHTML += `
+                          <article class="news-grid-card">
+                            <div class="news-grid-card-content">
+                              <time class="news-grid-card-date">${fecha}</time>
+                              <h3 class="news-grid-card-title">${item.title}</h3>
+                              <p class="news-grid-card-text">${item.description.replace(/<[^>]*>?/gm, '').substring(0, 120)}...</p>
+                              <a href="${item.link}" target="_blank" rel="noreferrer noopener">
+                                <div class="btn-link news-grid-card-link">
+                                  <span>Leer más</span>
+                                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                  </svg>
+                                </div>
+                              </a>
+                            </div>
+                          </article>
+                        `;
+                      });
+                    }
+                  } catch (error) {
+                    console.error('Error cargando noticias:', error);
+                  }
+                }
+
+                document.addEventListener('DOMContentLoaded', cargarNoticias);
+              </script>
               <!--NewsGrid component-->
               <div class="news-grid-container1">
                 <section class="news-grid-outer-wrapper">
