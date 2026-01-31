@@ -244,14 +244,3 @@ body {
     color: #8c52ff;
 }
 
-/* Forzar que el banner ocupe todo el ancho y se pegue abajo */
-#CybotCookiebotDialog {
-    width: 100% !important;
-    max-width: 100% !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    top: auto !important;
-    position: fixed !important;
-    border-radius: 0 !important; /* Elimina bordes redondeados para que parezca una barra */
-}
