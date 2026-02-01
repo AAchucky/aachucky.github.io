@@ -250,3 +250,10 @@ body {
     color: #8c52ff;
 }
 
+.navigation-main {
+  height: 72px;           /* usa la altura real de tu nav */
+}
+
+body {
+  padding-top: 72px;     /* compensa el fixed nav */
+}
