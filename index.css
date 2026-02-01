@@ -250,24 +250,10 @@ body {
     color: #8c52ff;
 }
 
-:root {
-  --nav-height: 72px;
-}
-
-@media (max-width: 767px) {
-  :root {
-    --nav-height: 56px;
-  }
-}
-
 .navigation-main {
-  height: var(--nav-height);
+  height: 72px;           /* usa la altura real de tu nav */
 }
 
 body {
-  padding-top: var(--nav-height);
-}
-
-html {
-  scrollbar-gutter: stable;
+  padding-top: 72px;     /* compensa el fixed nav */
 }
