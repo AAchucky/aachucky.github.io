@@ -257,3 +257,7 @@ body {
 body {
   padding-top: 72px;     /* compensa el fixed nav */
 }
+
+.navigation-desktop-menu {
+  min-height: 48px;
+}
