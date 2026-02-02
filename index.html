@@ -254,14 +254,6 @@
     <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
       <link href="./index.css" rel="stylesheet" />
 
-    <script
-    id="Cookiebot"
-    src="https://consent.cookiebot.com/uc.js"
-    data-cbid="737f95ec-5289-4714-9d3c-cf79df619659"
-    data-blockingmode="auto"
-    type="text/javascript">
-    </script>
-
 
   </head>
 
@@ -1139,5 +1131,32 @@
       });
     </script>
 
-  </main></body>
+  </main>
+  
+  <script>
+(function () {
+  let loaded = false;
+
+  function loadCookiebot() {
+    if (loaded) return;
+    loaded = true;
+
+    const s = document.createElement("script");
+    s.id = "Cookiebot";
+    s.src = "https://consent.cookiebot.com/uc.js";
+    s.setAttribute("data-cbid", "737f95ec-5289-4714-9d3c-cf79df619659");
+    s.setAttribute("data-blockingmode", "auto");
+    document.head.appendChild(s);
+
+    window.removeEventListener("scroll", loadCookiebot);
+    window.removeEventListener("click", loadCookiebot);
+  }
+
+  window.addEventListener("scroll", loadCookiebot, { once: true });
+  window.addEventListener("click", loadCookiebot, { once: true });
+})();
+</script>
+
+
+  </body>
 </html>
