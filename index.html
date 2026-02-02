@@ -254,6 +254,15 @@
     <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
       <link href="./index.css" rel="stylesheet" />
 
+    <script
+    id="Cookiebot"
+    src="https://consent.cookiebot.com/uc.js"
+    data-cbid="737f95ec-5289-4714-9d3c-cf79df619659"
+    data-blockingmode="auto"
+    type="text/javascript">
+    </script>
+
+
   </head>
 
   <body><main>
@@ -1104,12 +1113,6 @@
         // Esto engaña al test de Google para que te dé el 90+
         setTimeout(function() {
           
-          // 1. CARGAMOS EL AVISO DE COOKIES
-          var cookieScript = document.createElement('script');
-          cookieScript.src = 'https://consent.cookiebot.com/uc.js';
-          cookieScript.setAttribute('data-cbid', '737f95ec-5289-4714-9d3c-cf79df619659');
-          cookieScript.setAttribute('data-blockingmode', 'auto');
-          document.head.appendChild(cookieScript);
 
           // 2. CARGAMOS LOS ANUNCIOS (ADSENSE)
           var adsenseScript = document.createElement('script');
