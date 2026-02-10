@@ -3293,7 +3293,7 @@
 
 .affiliate-image img {
   width: 80%;
-  height: 100;   /* ← aquí cambias el tamaño. Antes era 180px, baja a 140px o 120px */
+  height: 100px;   /* ← aquí cambias el tamaño. Antes era 180px, baja a 140px o 120px */
   object-fit: cover;
 }
 
