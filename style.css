@@ -3293,8 +3293,10 @@
 
 .affiliate-image img {
   width: 80%;
-  height: 100px;   /* ← aquí cambias el tamaño. Antes era 180px, baja a 140px o 120px */
+  height: 100px;  /* ← ¡No olvides el "px"! */
   object-fit: cover;
+  display: block; /* Esto ayuda a que no queden huecos raros debajo */
+  margin: 0 auto; /* Esto la centra si el contenedor es más ancho */
 }
 
 .affiliates-row {
@@ -3306,8 +3308,9 @@
 }
 
 .affiliate-link {
-  flex: 1 1 300px; /* permite que crezcan y se encojan */
-  max-width: 400px;
+  /* Eliminamos el flex: 1 para que no se estire a lo loco */
+  width: fit-content; 
+  margin: 0 auto;
   text-decoration: none;
   display: block;
 }
